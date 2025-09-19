@@ -1,0 +1,44 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; // espacio entre los enlaces
+  padding: 1rem 2rem;
+  background-color: #0f2027; // fondo oscuro
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    transition: background 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: #ff6f61;
+      color: #fff;
+    }
+
+    &.active {
+      background-color: #ff6f61;
+      color: #fff;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+hr {
+  margin: 0;
+  border: none;
+  border-top: 2px solid #ff6f61;
+  width: 80%;
+  margin: 0.5rem auto 2rem auto;
+}
